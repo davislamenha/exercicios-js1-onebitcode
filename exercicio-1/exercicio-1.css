@@ -89,6 +89,11 @@ header h1 {
 .cr-info span,
 .calc-info p,
 .calc-info span {
-  color: #fcfcfc;
+  color: #c2c9f2;
   font-size: 24px;
+}
+
+.cr-info span {
+  color: #2a3340;
+  font-weight: bold;
 }
