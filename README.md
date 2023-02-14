@@ -8,13 +8,13 @@
 
 ### Exercício 1
 
-# Cadastro de Recrutas
+#### Cadastro de Recrutas
 
 - Escrever um programa em javascript que permita salvar informações de um recruta
 - As informações a serem salvas são: primeiro nome, sobrenome, campo de estudo e ano de nascimento
 - O programa deve exibir o nome completo do recruta, seu campo de estudo e sua idade
 
-# Calculadora de 4 Operações
+#### Calculadora de 4 Operações
 
 - Escrever um programa em javascript que permita inserir dois valores numéricos
 - Calcule o resultado das quatro operações básicas (soma, subtração, multiplicação e divisão)
