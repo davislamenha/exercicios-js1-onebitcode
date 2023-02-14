@@ -49,29 +49,34 @@ header h1 {
   text-transform: uppercase;
 }
 
-/* == CADASTRO DE RECRUTAS == */
-.cr-container {
+/* == CADASTRO DE RECRUTAS E CALCULADORA == */
+.cr-container,
+.calc-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 40px;
 }
-.cr-container h2 {
+.cr-container h2,
+.calc-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-.cr-container h2:nth-child(3) {
+.cr-container h2:nth-child(3),
+.calc-container h2:nth-child(3) {
   text-align: start;
   grid-column: 2;
   grid-row: 1;
 }
-#cr-form {
+#cr-form,
+#calc-form {
   grid-column: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-.cr-info {
+.cr-info,
+.calc-info {
   grid-column: 2;
   grid-row: 2;
   background-color: #5b89a6;
@@ -81,7 +86,9 @@ header h1 {
   grid-template-columns: 1fr 1fr;
 }
 .cr-info p,
-.cr-info span {
+.cr-info span,
+.calc-info p,
+.calc-info span {
   color: #fcfcfc;
   font-size: 24px;
 }
