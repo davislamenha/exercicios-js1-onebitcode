@@ -98,3 +98,16 @@ header h1 {
   color: #2a3340;
   font-weight: bold;
 }
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #2a3340;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.btn-voltar:hover {
+  background-color: #5b89ff;
+}
