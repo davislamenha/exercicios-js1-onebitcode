@@ -1,0 +1,113 @@
+/* == RESET == */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* == GERAL == */
+body {
+  background-color: #bfbdbe;
+}
+.container {
+  width: min(100% - 30px, 1300px);
+  margin-inline: auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #5b89a6;
+  color: #fcfcfc;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+button:hover {
+  background-color: #568fcc;
+}
+input {
+  border: none;
+  border-bottom: 5px solid #bfbdbe;
+  padding: 5px;
+  font-size: 18px;
+  transition: 0.3s all;
+}
+input:focus {
+  outline: none;
+  border-bottom-color: #568fcc;
+}
+
+/* == HEADER == */
+header {
+  background-color: #5b89a6;
+  padding-block: 12px;
+  margin-bottom: 80px;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* == CADASTRO DE RECRUTAS E CALCULADORA == */
+.cr-container,
+.calc-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+.cr-container h2,
+.calc-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cr-container h2:nth-child(3),
+.calc-container h2:nth-child(3) {
+  text-align: start;
+  grid-column: 2;
+  grid-row: 1;
+}
+#cr-form,
+#calc-form {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.cr-info,
+.calc-info {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #5b89a6;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cr-info p,
+.cr-info span,
+.calc-info p,
+.calc-info span {
+  color: #c2c9f2;
+  font-size: 24px;
+}
+
+.cr-info span,
+.calc-info span {
+  color: #2a3340;
+  font-weight: bold;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #2a3340;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.btn-voltar:hover {
+  background-color: #5b89ff;
+}
