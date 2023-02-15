@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2</title>
+  <link rel="stylesheet" href="./exercicio-2.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exercício 2</h1>
+  </header>
+  <div class="container">
+    <div class="tv-container">
+      <h2>Teste de Velocidade</h2>
+      <form id="tv-form">
+        <input id="tv-veiculo1-nome" type="text" placeholder="Nome do Veículo 1" required>
+        <input id="tv-veiculo1-velocidade" type="number" placeholder="Velocidade do Veículo 1" min="0" required>
+        <input id="tv-veiculo2-nome" type="text" placeholder="Nome do Veículo 2" required>
+        <input id="tv-veiculo2-velocidade" type="number" placeholder="Velocidade do Veículo 2" min="0" required>
+        <button type="submit">Comparar</button>
+      </form>
+      <h2>Dados comparativos</h2>
+      <div class="tv-info">
+        <p>Dados obtidos: <span class="teste-info"></span></p>
+      </div>
+    </div>
+
+    <div class="calc-container">
+      <h2>Calculadora de Dano</h2>
+      <form id="calc-form">
+        <input id="calc-nome1" type="text" placeholder="Nome do Personagem 1" required>
+        <input id="calc-ataque1" placeholder="Ataque do Personagem 1" type="number" min="0" required>
+        <input id="calc-nome2" type="text" placeholder="Nome do Personagem 2" required>
+        <input id="calc-vida2" placeholder="Vida do Personagem 2" type="number" min="0" required>
+        <input id="calc-defesa2" placeholder="Defesa do Personagem 2" type="number" min="0" required>
+        <input type="checkbox" id="calc-escudo" name="escudo" value="true">
+        <label for="calc-escudo"> O personagem 2 possui escudo?</label>
+        <button type="submit">Calcular</button>
+      </form>
+      <h2>Resultados</h2>
+      <div class="calc-info">
+        <div class="personagem1">
+          <h3 class="nome1"></h3>
+          <p>Ataque: <span class="ataque1"></span></p>
+          <p>Dano Causado: <span class="dano1"></span></p>
+        </div>
+        <div class="personagem2">
+          <h3 class="nome2"></h3>
+          <p>Vida: <span class="vida2"></span></p>
+          <p>Defesa: <span class="defesa2"></span></p>
+          <p>Escudo: <span class="escudo2"></span></p>
+          <p>Dano Sofrido: <span class="dano2"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn-voltar" href="../index.html">voltar</a>
+  </div>
+
+  <script src="./exercicio-2.js"></script>
+</body>
+
+</html>
