@@ -20,6 +20,21 @@
 - Calcule o resultado das quatro operações básicas (soma, subtração, multiplicação e divisão)
 - Após calcular os resultados o programa deve exibi-los na tela
 
+### Exercício 2
+
+#### Teste de Velocidade
+
+- Escrever um programa em javascript que permita inserir o nome e a velocidade de dois veículos
+- Exibir na tela uma mensagem dizendo qual dos dois é mais rápido
+
+#### Calculadora de Dano
+
+- Escrever um programa que permita inserir o nome e o poder de ataque de um personagem
+- Inserir o nome, a quantidade de pontos de vida, o poder de defesa de outro personagem, e se ele possui um escudo
+- Calcule a quantidade de dano causado baseado nas regras informadas
+- O programa deve subtrair a quantidade de dano da quantidade de pontos de vida do personagem defensor
+- Exibir na tela a quantidade de dano e as informações atualizadas de ambos os personagens
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
