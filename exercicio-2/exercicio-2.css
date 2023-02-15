@@ -99,6 +99,14 @@ header h1 {
   font-weight: bold;
 }
 
+label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
 .btn-voltar {
   display: inline-block;
   background-color: #2a3340;
