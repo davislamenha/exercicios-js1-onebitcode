@@ -105,12 +105,29 @@ header h1 {
   font-weight: bold;
 }
 
+.calc-info h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  border-left: 5px solid #2a3340;
+  padding-left: 5px;
+}
+
 label {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 18px;
   margin-bottom: 6px;
+}
+
+.calc-info .resultado {
+  grid-column: 1/-1;
+  color: #2a3340;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .btn-voltar {
