@@ -35,6 +35,14 @@
 - O programa deve subtrair a quantidade de dano da quantidade de pontos de vida do personagem defensor
 - Exibir na tela a quantidade de dano e as informações atualizadas de ambos os personagens
 
+### Exercício 3
+
+#### Conversor de Medidas
+
+- Escrever um programa em javascript que funcione como um conversor de medidas
+- Pedir por um valor em metros e então dar a opção de escolher para qual unidade de medida esse valor deve ser convertido
+- Converter a medida de acordo com a opção escolhida e exibir o resultado
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
