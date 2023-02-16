@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+  <link rel="stylesheet" href="./exercicio-3.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exercício 3</h1>
+  </header>
+  <div class="container">
+    <div class="cm-container">
+      <h2>Conversor de Medidas</h2>
+      <form id="cm-form">
+        <input id="cm-metros" type="number" placeholder="Metros" min="0" required>
+        <select name="" id="cm-unidade" required>
+          <option value="">Selecione uma Opção</option>
+          <option value="milímetros (mm)">milímetro (mm)</option>
+          <option value="centímetros (cm)">centímetro (cm)</option>
+          <option value="decímetros (dm)">decímetro (dm)</option>
+          <option value="decâmetros (dam)">decâmetro (dam)</option>
+          <option value="hectômetros (hm)">hectômetro (hm)</option>
+          <option value="quilômetros (km)">quilômetro (km)</option>
+        </select>
+
+        <button type="submit">Converter</button>
+      </form>
+      <h2 class="info-titulo"></h2>
+      <div class="cm-info">
+        <p class="resultado"></p>
+
+      </div>
+    </div>
+
+    <a class="btn-voltar" href="../index.html">voltar</a>
+  </div>
+
+  <script src="./exercicio-3.js"></script>
+</body>
+
+</html>
