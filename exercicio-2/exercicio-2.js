@@ -30,6 +30,9 @@ function compararVeiculos() {
 
 // CALCULADORA DE DANOS
 const calcForm = document.getElementById('calc-form');
+const ataquePersonagem1 = document.getElementById('calc-ataque1');
+const defesaPersonagem2 = document.getElementById('calc-defesa2');
+const escudoPersonagem2 = document.getElementById('calc-escudo2');
 
 calcForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -39,14 +42,11 @@ calcForm.addEventListener('submit', (e) => {
 function mostrarInfo() {
   const nomePersonagem1 = document.getElementById('calc-nome1').value;
   const nomePersonagem2 = document.getElementById('calc-nome2').value;
-  const ataquePersonagem1 = parseFloat(
-    document.getElementById('calc-ataque1').value,
-  );
-  const defesaPersonagem2 = parseFloat(
-    document.getElementById('calc-defesa2').value,
-  );
-  const escudoPersonagem2 = document.getElementById('calc-escudo2').checked;
-  const escudo = escudoPersonagem2 ? 'Possui escudo!' : 'Não possui escudo!';
+  const ataque = parseFloat(ataquePersonagem1.value);
+  const defesa = parseFloat(defesaPersonagem2.value);
+  const escudo = escudoPersonagem2.checked
+    ? 'Possui escudo!'
+    : 'Não possui escudo!';
   const dano = calcularDano();
   const vida = sofrerDano();
   const resultado =
@@ -64,12 +64,12 @@ function mostrarInfo() {
   const spanResultado = document.querySelector('.resultado');
 
   h3Personagem1.innerHTML = nomePersonagem1;
-  spanAtaque.innerHTML = ataquePersonagem1;
+  spanAtaque.innerHTML = ataque;
   spanDanoCausado.innerHTML = dano;
 
   h3Personagem2.innerHTML = nomePersonagem2;
   spanVida.innerHTML = vida;
-  spanDefesa.innerHTML = defesaPersonagem2;
+  spanDefesa.innerHTML = defesa;
   spanEscudo.innerHTML = escudo;
 
   spanResultado.innerHTML = resultado;
@@ -85,17 +85,13 @@ function sofrerDano() {
 }
 
 function calcularDano() {
-  const ataquePersonagem1 = parseFloat(
-    document.getElementById('calc-ataque1').value,
-  );
-  const defesaPersonagem2 = parseFloat(
-    document.getElementById('calc-defesa2').value,
-  );
-  const escudoPersonagem2 = document.getElementById('calc-escudo2').checked;
+  const ataque = parseFloat(ataquePersonagem1.value);
+  const defesa = parseFloat(defesaPersonagem2.value);
+  const escudo = escudoPersonagem2.checked;
 
-  if (ataquePersonagem1 > defesaPersonagem2 && !escudoPersonagem2) {
-    return ataquePersonagem1 - defesaPersonagem2;
-  } else if (ataquePersonagem1 > defesaPersonagem2 && escudoPersonagem2) {
-    return (ataquePersonagem1 - defesaPersonagem2) / 2;
+  if (ataque > defesa && !escudo) {
+    return ataque - defesa;
+  } else if (ataque > defesa && escudo) {
+    return (ataque - defesa) / 2;
   } else return 0;
 }
