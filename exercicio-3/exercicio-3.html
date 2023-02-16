@@ -17,15 +17,15 @@
     <div class="cm-container">
       <h2>Conversor de Medidas</h2>
       <form id="cm-form">
-        <input id="cm-metros" type="number" placeholder="Metros" required>
+        <input id="cm-metros" type="number" placeholder="Metros" min="0" required>
         <select name="" id="cm-unidade" required>
           <option value="">Selecione uma Opção</option>
-          <option value="">milímetro (mm)</option>
-          <option value="">centímetro (cm)</option>
-          <option value="">decímetro (dm)</option>
-          <option value="">decâmetro (dam)</option>
-          <option value="">hectômetro (hm)</option>
-          <option value="">quilômetro (km)</option>
+          <option value="milímetros (mm)">milímetro (mm)</option>
+          <option value="centímetros (cm)">centímetro (cm)</option>
+          <option value="decímetros (dm)">decímetro (dm)</option>
+          <option value="decâmetros (dam)">decâmetro (dam)</option>
+          <option value="hectômetros (hm)">hectômetro (hm)</option>
+          <option value="quilômetros (km)">quilômetro (km)</option>
         </select>
 
         <button type="submit">Converter</button>
