@@ -43,6 +43,16 @@
 - Pedir por um valor em metros e então dar a opção de escolher para qual unidade de medida esse valor deve ser convertido
 - Converter a medida de acordo com a opção escolhida e exibir o resultado
 
+### Exercício 4
+
+#### Visitando Novas Cidades
+
+- Escrever um programa em javascript que peça o nome de um turista
+- Perguntar se ele já visitou alguma cidade
+- Caso a resposta seja sim, pergunte o nome da cidade e o armazene em uma variável
+- Continue perguntando se o turista visitou alguma outra cidade até que a resposta seja não
+- No fim, o programa deve exibir o nome do turista, quantas e quais cidades ele visitou
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
