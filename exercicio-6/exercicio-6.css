@@ -1,0 +1,133 @@
+/* == RESET == */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* == GERAL == */
+body {
+  background-color: #bfbdbe;
+}
+.container {
+  width: min(100% - 30px, 1300px);
+  margin-inline: auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #5b89a6;
+  color: #fcfcfc;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+button:hover {
+  background-color: #568fcc;
+}
+input {
+  border: none;
+  border-bottom: 5px solid #bfbdbe;
+  padding: 5px;
+  font-size: 18px;
+  transition: 0.3s all;
+}
+input:focus {
+  outline: none;
+  border-bottom-color: #568fcc;
+}
+
+/* == HEADER == */
+header {
+  background-color: #5b89a6;
+  padding-block: 12px;
+  margin-bottom: 80px;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* == TESTE DE VELOCIDADE E CALCULADORA DE DANO == */
+.rt-container,
+.pp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+.rt-container h2,
+.pp-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rt-container h2:nth-child(3),
+.pp-container h2:nth-child(3) {
+  text-align: start;
+  grid-column: 2;
+  grid-row: 1;
+}
+#rt-form,
+#pp-form {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.desc {
+  text-align: center;
+  width: 30ch;
+  margin-bottom: 8px;
+}
+
+.rt-info,
+.pp-info {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #5b89a6;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.rt-info {
+  grid-template-columns: 1fr;
+}
+.rt-info p,
+.rt-info span,
+.pp-info p,
+.pp-info span {
+  color: #c2c9f2;
+  font-size: 24px;
+}
+
+.pp-info p {
+  margin-bottom: 12px;
+}
+.rt-info span,
+.pp-info span {
+  color: #2a3340;
+  font-weight: bold;
+}
+
+.pp-info .resultado {
+  grid-column: 1/-1;
+  color: #2a3340;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #2a3340;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.btn-voltar:hover {
+  background-color: #5b89ff;
+}
