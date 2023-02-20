@@ -70,6 +70,20 @@
 - A opção de remover dinheiro deve fazer o mesmo, porém subtraindo o valor
 - A opção de sair deve encerrar o programa
 
+### Exercício 6
+
+#### Robô da Tabuada
+
+- Escrever um programa em javascript que seja capaz de calcular a tabuada de um determinado número de 1 a 20
+- O programa deve começar pedindo o número a ser usado nos cálculos e então salvar todos os resultados de multiplicações de 1 a 20 usando o número informado dentro de uma variável do tipo string
+- Depois o programa deve exibir esses resultados
+
+#### Procurando Palíndromos
+
+- Escrever um programa em javascript que seja capaz de identificar se uma palavra é um palíndromo
+- O programa deve iniciar pedindo que seja informada uma palavra e então deve exibir uma mensagem dizendo se aquela palavra é ou não um palíndromo
+- Caso não seja um palíndromo, o programa deve mostrar a palavra lida da esquerda para direita e da direita para esquerda
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
