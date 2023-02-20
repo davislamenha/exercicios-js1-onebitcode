@@ -53,6 +53,23 @@
 - Continue perguntando se o turista visitou alguma outra cidade até que a resposta seja não
 - No fim, o programa deve exibir o nome do turista, quantas e quais cidades ele visitou
 
+### Exercício 5
+
+#### Menu Interativo
+
+- Escrever um programa em javascript que simule um menu interativo com 5 opções diferentes
+- As quatro primeiras não precisam de nenhuma funcionalidade específica, a última opção deve ser a opção “Encerrar”
+- Ao clicar em alguma das quatro primeiras opções uma mensagem deve ser exibida na tela indicando qual foi a opção escolhida e depois o programa deve exibir novamente o menu com as 5 opções até que o usuário escolha a opção “Encerrar”
+- Ao escolher a opção “Encerrar”, deve ser mostrada uma mensagem dizendo que o sistema está sendo encerrado, deve ser exibida na tela e então o programa é finalizado
+
+#### Controle Financeiro
+
+- Escrever um programa em javascript que comece perguntando pela quantidade inicial de dinheiro disponível
+- Mostrar na tela essa quantidade juntamente com as opções de adicionar e remover dinheiro e uma opção de sair
+- Ao clicar na opção de adicionar dinheiro o programa deve perguntar pela quantidade a ser adicionada, somar esse valor com a quantidade inicial e então mostrar novamente o menu com a quantidade de dinheiro e as opções
+- A opção de remover dinheiro deve fazer o mesmo, porém subtraindo o valor
+- A opção de sair deve encerrar o programa
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
