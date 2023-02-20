@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6</title>
+  <link rel="stylesheet" href="./exercicio-6.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exercício 6</h1>
+  </header>
+  <div class="container">
+    <div class="rt-container">
+      <h2>Robô da Tabuada</h2>
+      <p class="desc">Digite um número no campo abaixo, e será calculado a tabuada de 1 a 20 do número digitado.</p>
+      <form id="rt-form">
+        <input id="rt-numero" type="number" min="0" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <h2>Tabuada</h2>
+      <div class="rt-info">
+        <p class="rt-tabuada"></p>
+      </div>
+    </div>
+
+    <div class="pp-container">
+      <h2>Procurando Palíndromos</h2>
+      <p class="desc">Escreva uma palavra no campo abaixo para verificar se a mesma é um Palíndromo.</p>
+      <form id="pp-form">
+        <input id="pp-palavra" type="text" placeholder="Escreva uma palavra" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <h2>Resultado</h2>
+      <div class="pp-info">
+        <p class="palavra-1"></p>
+        <p class="palavra-2"></p>
+        <p class="resultado"></p>
+      </div>
+    </div>
+
+    <a class="btn-voltar" href="../index.html">voltar</a>
+  </div>
+
+  <script src="./exercicio-6.js"></script>
+</body>
+
+</html>
