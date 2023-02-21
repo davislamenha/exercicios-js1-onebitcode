@@ -84,6 +84,23 @@
 - O programa deve iniciar pedindo que seja informada uma palavra e então deve exibir uma mensagem dizendo se aquela palavra é ou não um palíndromo
 - Caso não seja um palíndromo, o programa deve mostrar a palavra lida da esquerda para direita e da direita para esquerda
 
+### Exercício 7
+
+#### Fila de Espera
+
+- Escrever um programa em javascript para simular uma fila de espera em um consultório médico
+- O programa deve iniciar mostrando na tela um menu interativo contendo a lista de todos os pacientes esperando em ordem mostrando sua posição ao lado do nome
+- O menu também deve permitir escolher entre as opções de “Novo paciente”, para adicionar um novo paciente ao fim da fila, “Consultar paciente”, que retira o primeiro paciente da fila e mostra na tela o nome do paciente consultado, e “Sair”
+- O programa só deve ser encerrado ao escolher a opção de “Sair”, caso contrário deve voltar ao menu
+
+#### Pilha de Cartas
+
+- Escrever um programa em javascript para simular um baralho de cartas
+- O programa deve iniciar mostrando na tela um menu interativo contendo a quantidade de cartas que estão atualmente no baralho e as opções de “Adicionar uma carta”, “Puxar uma carta” e “Sair”
+- Ao escolher “Adicionar uma carta”, o programa deve perguntar o nome da carta e adicioná-la no topo do baralho
+- Ao escolher “Puxar uma carta”, o programa deve retirar a carta do topo do baralho e mostrar na tela o nome da carta puxada
+- O programa só deve ser encerrado ao escolher a opção de “Sair”, caso contrário deve voltar ao menu
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
