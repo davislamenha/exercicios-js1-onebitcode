@@ -1,4 +1,4 @@
-// MENU INTERATIVO
+// FILA DE ESPERA
 const feBtn = document.querySelector('#fe-iniciar');
 let filaDeEspera = [];
 
@@ -41,6 +41,51 @@ function iniciarFila() {
           const pacienteConsultado = filaDeEspera.shift();
           alert(`${pacienteConsultado} foi consultado!`);
         } else alert('Não tem pacientes no momento!');
+        break;
+
+      default:
+        break;
+    }
+  } while (opcao != '3');
+}
+
+// PILHA DE CARTAS
+const pcBtn = document.querySelector('#pc-iniciar');
+let pilhaDeCartas = [];
+
+pcBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  iniciarPilhaDeCartas();
+});
+
+function iniciarPilhaDeCartas() {
+  let opcao = '';
+  let novaCarta = '';
+
+  do {
+    let quantidadeDeCartas = pilhaDeCartas.length;
+    opcao = prompt(`
+    Quantidade de Cartas na Pilha: ${quantidadeDeCartas}
+
+      Escolha uma das opções abaixo:
+      1 - Adicionar Carta
+      2 - Puxar Carta
+      3 - Sair
+    `);
+    switch (opcao) {
+      case '1':
+        do {
+          novaCarta = prompt(`
+            Digite o nome da carta:
+          `);
+        } while (novaCarta === null);
+        pilhaDeCartas.push(novaCarta);
+        break;
+      case '2':
+        if (pilhaDeCartas.length > 0) {
+          const cartaPuxada = pilhaDeCartas.pop();
+          alert(`Você puxou a carta ${cartaPuxada}.`);
+        } else alert('Não tem cartas na pilha!');
         break;
 
       default:
