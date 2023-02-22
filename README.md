@@ -101,6 +101,21 @@
 - Ao escolher “Puxar uma carta”, o programa deve retirar a carta do topo do baralho e mostrar na tela o nome da carta puxada
 - O programa só deve ser encerrado ao escolher a opção de “Sair”, caso contrário deve voltar ao menu
 
+### Exercício 8
+
+#### Cadastro de Imóveis
+
+- Escrever um programa em javascript que funcione como um cadastro de imóveis
+- O programa deve ter um menu interativo que sempre é exibido até que o usuário escolha sair
+- O menu interativo deve mostrar no topo a quantidade de imóveis cadastrados
+- O menu deve ter a opção de salvar um imóvel
+- Para salvar um novo imóvel o programa deve pedir as seguintes informações:
+  - Nome do proprietário
+  - Quantidade de quartos
+  - Quantidade de banheiros
+  - Se possui garagem
+- O menu também deve ter a opção de mostrar todos os imóveis salvos
+
 ## Meta
 
 Davis Lamenha Sampaio - [Linkedin](https://www.linkedin.com/in/davislamenha/) - davislamenha@gmail.com
