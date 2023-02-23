@@ -8,52 +8,24 @@ cgBtn.addEventListener('click', (e) => {
 
 function iniciarPrograma() {
   let opcao = '';
-  let numero1 = 0;
-  let numero2 = 0;
-  let numero3 = 0;
-  let area = 0;
 
   do {
-    opcao = prompt(`
-    Calculadora Geométrica
-
-    Escolha uma das opções abaixo:
-    1 - Área do triângulo
-    2 - Área do retângulo
-    3 - Área do quadrado
-    4 - Área do trapézio
-    5 - Área do círculo    
-    6 - Sair
-    `);
+    opcao = exibirMenu();
     switch (opcao) {
       case '1':
-        numero1 = prompt('Digite a base do triângulo:');
-        numero2 = prompt('Digite a altura do triângulo:');
-        area = areaRetangulo(numero1, numero2) / 2;
-        alert(`A área do triângulo é ${area}`);
+        areaTriangulo();
         break;
       case '2':
-        numero1 = prompt('Digite a base do retângulo:');
-        numero2 = prompt('Digite a altura do retângulo:');
-        area = areaRetangulo(numero1, numero2);
-        alert(`A área do retângulo é ${area}`);
+        areaRetangulo();
         break;
       case '3':
-        numero1 = prompt('Digite o lado do quadrado:');
-        area = areaQuadrado(numero1);
-        alert(`A área do quadrado é ${area}`);
+        areaQuadrado();
         break;
       case '4':
-        numero1 = prompt('Digite a base maior do trapézio:');
-        numero2 = prompt('Digite a base menor do trapézio:');
-        numero3 = prompt('Digite a altura do trapézio:');
-        area = areaTrapezio(numero2, numero1, numero3);
-        alert(`A área do trapézio é ${area}`);
+        areaTrapezio();
         break;
       case '5':
-        numero1 = prompt('Digite o raio do círculo:');
-        area = areaCirculo(numero1);
-        alert(`A área do círculo é ${area}`);
+        areaCirculo();
         break;
       case '6':
         alert('Encerrado programa...');
@@ -66,16 +38,48 @@ function iniciarPrograma() {
   } while (opcao != '6');
 }
 
-function areaRetangulo(base, altura) {
-  return +base * +altura;
+function areaTriangulo() {
+  const base = prompt('Digite a base do triângulo:');
+  const altura = prompt('Digite a altura do triângulo:');
+  const area = (+base * +altura) / 2;
+  return alert(`A área do triângulo é ${area}`);
 }
-function areaQuadrado(lado) {
-  return +lado * +lado;
+
+function areaRetangulo() {
+  const base = prompt('Digite a base do retângulo:');
+  const altura = prompt('Digite a altura do retângulo:');
+  const area = +base * +altura;
+  return alert(`A área do retângulo é ${area}`);
 }
-function areaTrapezio(baseMenor, baseMaior, altura) {
-  return ((+baseMenor + +baseMaior) * +altura) / 2;
+function areaQuadrado() {
+  const lado = prompt('Digite o lado do quadrado:');
+  const area = +lado * +lado;
+  return alert(`A área do quadrado é ${area}`);
 }
-function areaCirculo(raio) {
+function areaTrapezio() {
+  const baseMaior = prompt('Digite a base maior do trapézio:');
+  const baseMenor = prompt('Digite a base menor do trapézio:');
+  const altura = prompt('Digite a altura do trapézio:');
+  const area = ((+baseMenor + +baseMaior) * +altura) / 2;
+  return alert(`A área do trapézio é ${area}`);
+}
+function areaCirculo() {
   const pi = 3.14;
-  return pi * (+raio * +raio);
+  const raio = prompt('Digite o raio do círculo:');
+  const area = pi * (+raio * +raio);
+  return alert(`A área do círculo é ${area}`);
+}
+
+function exibirMenu() {
+  return prompt(`
+  Calculadora Geométrica
+
+  Escolha uma das opções abaixo:
+  1 - Área do triângulo
+  2 - Área do retângulo
+  3 - Área do quadrado
+  4 - Área do trapézio
+  5 - Área do círculo    
+  6 - Sair
+  `);
 }
