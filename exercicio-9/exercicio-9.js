@@ -27,31 +27,31 @@ function iniciarPrograma() {
     `);
     switch (opcao) {
       case '1':
-        numero1 = prompt('Digite o valor da base do triângulo:');
-        numero2 = prompt('Digite o valor da altura do triângulo:');
+        numero1 = prompt('Digite a base do triângulo:');
+        numero2 = prompt('Digite a altura do triângulo:');
         area = areaRetangulo(numero1, numero2) / 2;
         alert(`A área do triângulo é ${area}`);
         break;
       case '2':
-        numero1 = prompt('Digite o valor da base do retângulo:');
-        numero2 = prompt('Digite o valor da altura do retângulo:');
+        numero1 = prompt('Digite a base do retângulo:');
+        numero2 = prompt('Digite a altura do retângulo:');
         area = areaRetangulo(numero1, numero2);
         alert(`A área do retângulo é ${area}`);
         break;
       case '3':
-        numero1 = prompt('Digite o valor do lado do quadrado:');
+        numero1 = prompt('Digite o lado do quadrado:');
         area = areaQuadrado(numero1);
         alert(`A área do quadrado é ${area}`);
         break;
       case '4':
-        numero1 = prompt('Digite o valor da base maior do trapézio:');
-        numero2 = prompt('Digite o valor da base menor do trapézio:');
-        numero3 = prompt('Digite o valor da altura do trapézio:');
+        numero1 = prompt('Digite a base maior do trapézio:');
+        numero2 = prompt('Digite a base menor do trapézio:');
+        numero3 = prompt('Digite a altura do trapézio:');
         area = areaTrapezio(numero2, numero1, numero3);
         alert(`A área do trapézio é ${area}`);
         break;
       case '5':
-        numero1 = prompt('Digite o valor do raio do círculo:');
+        numero1 = prompt('Digite o raio do círculo:');
         area = areaCirculo(numero1);
         alert(`A área do círculo é ${area}`);
         break;
