@@ -23,6 +23,7 @@ function iniciarPrograma() {
         visualizarVaga();
         break;
       case '4':
+        inscreverCandidato();
         break;
       case '5':
         break;
