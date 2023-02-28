@@ -26,6 +26,7 @@ function iniciarPrograma() {
         inscreverCandidato();
         break;
       case '5':
+        excluirVaga();
         break;
       case '6':
         alert('Encerrado programa...');
@@ -82,6 +83,14 @@ function inscreverCandidato() {
   if (encontrarVagaId(id)) {
     listaVagas[id].candidatos.push(nome);
     return alert(`Candidato ${nome} inscrito com sucesso!`);
+  }
+}
+
+function excluirVaga() {
+  const id = prompt('Informe o id da vaga:');
+  if (encontrarVagaId(id)) {
+    listaVagas.splice(id, 1);
+    return alert(`Vaga removida com sucesso!`);
   }
 }
 
