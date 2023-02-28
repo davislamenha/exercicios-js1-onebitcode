@@ -1,5 +1,6 @@
 // SISTEMA DE VAGAS DE EMPREGO
 const sveBtn = document.querySelector('#sve-iniciar');
+const listaVagas = [];
 
 sveBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -15,6 +16,7 @@ function iniciarPrograma() {
       case '1':
         break;
       case '2':
+        criarVaga();
         break;
       case '3':
         break;
@@ -31,6 +33,24 @@ function iniciarPrograma() {
         break;
     }
   } while (opcao != '6');
+}
+
+function criarVaga() {
+  const nome = prompt(`Informe o nome da vaga:`);
+  const descricao = prompt(`Informe a descrição da vaga:`);
+  const dataLimite = prompt(`Informe o data limite da vaga:`);
+  const confirmacao = confirm(`
+  Confirme as informções da vaga:
+  
+  Nome da Vaga: ${nome}
+  Descrição: ${descricao}
+  Data Limite: ${dataLimite}
+  `);
+  if (confirmacao) {
+    let vaga = { nome, descricao, dataLimite, candidatos: [] };
+    listaVagas.push(vaga);
+    return alert('Vaga registrada com Sucesso!');
+  } else return alert('O registro da vaga foi cancelado!');
 }
 
 function exibirMenu() {
