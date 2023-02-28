@@ -20,6 +20,7 @@ function iniciarPrograma() {
         criarVaga();
         break;
       case '3':
+        visualizarVaga();
         break;
       case '4':
         break;
@@ -67,6 +68,42 @@ function criarVaga() {
     listaVagas.push(vaga);
     return alert('Vaga registrada com Sucesso!');
   } else return alert('O registro da vaga foi cancelado!');
+}
+
+function visualizarVaga() {
+  const id = prompt(`Informe o id da vaga:`);
+  encontrarVagaId(id);
+}
+
+function inscreverCandidato() {
+  const nome = prompt('Informe o nome do candidato:');
+  const id = prompt('Informe o id da vaga:');
+  if (encontrarVagaId(id)) {
+    listaVagas[id].candidatos.push(nome);
+    return alert(`Candidato ${nome} inscrito com sucesso!`);
+  }
+}
+
+function encontrarVagaId(id) {
+  if (listaVagas[id]) {
+    const nomeCandidatos =
+      listaVagas[id].candidatos.length === 0
+        ? 'Nenhum candidato inscrito no momento!'
+        : listaVagas[id].candidatos.toString().replaceAll(',', ', ');
+    const confirmacao = confirm(`
+    Deseja excluir esta vaga?
+      
+    Id da Vaga: ${id}
+    Nome da Vaga: ${listaVagas[id].nome}
+    Descrição: ${listaVagas[id].descricao}
+    Data Limite: ${listaVagas[id].dataLimite}
+    Candidatos Inscritos: ${listaVagas[id].candidatos.length}
+    Nome dos Candidatos: ${nomeCandidatos}  
+    `);
+    if (confirmacao) {
+      return id;
+    } else return alert('Requisição cancelada!');
+  } else return alert('Vaga não encontrada!');
 }
 
 function exibirMenu() {
