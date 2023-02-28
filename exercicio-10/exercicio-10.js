@@ -99,7 +99,9 @@ function encontrarVagaId(id) {
     const nomeCandidatos =
       listaVagas[id].candidatos.length === 0
         ? 'Nenhum candidato inscrito no momento!'
-        : listaVagas[id].candidatos.toString().replaceAll(',', `, `);
+        : listaVagas[id].candidatos.reduce((lista, candidato, i) => {
+            return (lista += `\n ${i + 1}. ${candidato}`);
+          }, '');
     const confirmacao = confirm(`
    Confirme os dados da vaga:
       
@@ -108,7 +110,7 @@ function encontrarVagaId(id) {
    Descrição: ${listaVagas[id].descricao}
    Data Limite: ${listaVagas[id].dataLimite}
    Candidatos Inscritos: ${listaVagas[id].candidatos.length}
-   Nome dos Candidatos: ${nomeCandidatos}
+   Nome dos Candidatos:${nomeCandidatos}
      
     `);
     if (confirmacao) {
