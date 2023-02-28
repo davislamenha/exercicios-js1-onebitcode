@@ -14,6 +14,7 @@ function iniciarPrograma() {
     opcao = exibirMenu();
     switch (opcao) {
       case '1':
+        listarVagas();
         break;
       case '2':
         criarVaga();
@@ -33,6 +34,21 @@ function iniciarPrograma() {
         break;
     }
   } while (opcao != '6');
+}
+
+function listarVagas() {
+  let lista = '';
+  if (listaVagas.length) {
+    for (let i = 0; i < listaVagas.length; i++) {
+      const vaga = listaVagas[i];
+      lista += `
+      Id da Vaga: ${i}
+      Nome da Vaga: ${vaga.nome}
+      Candidatos Inscritos: ${vaga.candidatos.length}\n
+    `;
+    }
+    return alert(lista);
+  } else return alert('Sem vagas no momento!');
 }
 
 function criarVaga() {
